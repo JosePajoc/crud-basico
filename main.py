@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, status
 from EstudianteEsquema import Estudiante, EstudianteRespuesta
-
+#proyecto desplegado en Render
 #datos de prueba
 datosPrueba = [
     {
@@ -33,6 +33,7 @@ app = FastAPI(
     contact={
         "name": "José Pajoc",
         "email": "jose.ernesto.pajoc@gmail.com",
+        "url": "https://jose-pajoc-dev.onrender.com/",
     },
     license_info={
         "name": "MIT"}
