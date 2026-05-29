@@ -50,7 +50,7 @@ def estudiantes():
 
 
 @app.get("/estudiantes/{codigoPersonal}", response_model=Estudiante, tags=["CRUD Básico"])
-def estuadinteID(codigoPersonal: str):
+def estudianteID(codigoPersonal: str):
     for elemento in datosPrueba:
         if elemento["codigoPersonal"] == codigoPersonal:
             return elemento
